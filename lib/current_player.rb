@@ -11,14 +11,10 @@
   def current_player(board)
     play_even=["First","Third","Fifth","Seventh","Ninth"]
     play_odd=["Second","Fourth","Sixth","Eigth"]
-
-    if turn_count(board)%2==0?
-     play_even.each do |play_x|
-           puts "The correct player, X, for the #{play_x} move"
-         end
-    else
-      play_odd.each do |play_o|
-        puts "The correct player, O, for the #{play_o} move"
-      end
+    if turn_count(board)%2==0
+     play_even.each {|play_x| puts "The correct player, X, for the #{play_x} move"}
+   elsif turn_count(board)%2!=0
+      play_odd.each {|play_o| puts "The correct player, O, for the #{play_o} move"}
     end
   end
+
