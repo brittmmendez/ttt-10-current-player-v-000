@@ -17,4 +17,3 @@
       play_odd.each {|play_o| puts "The correct player, O, for the #{play_o} move"}
     end
   end
-
