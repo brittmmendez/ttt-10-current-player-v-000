@@ -5,13 +5,13 @@
         counter += 1
       end
     end
-    puts counter
+    return counter
   end
 
   def current_player(board)
     if turn_count(board)%2==0
-      puts "X"
+      return "X"
     elsif turn_count(board)%2==1
-      puts "O"
+      return "O"
     end
   end
